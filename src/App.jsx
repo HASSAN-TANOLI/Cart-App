@@ -24,13 +24,29 @@ function App() {
     console.log(eachdata);
   };
 
+  const handleChange = (item, d) => {
+    const updatedCart = cartItems.map((data) => {
+      if (data.id === item.id) {
+        const newAmount = Math.max(data.amount + d, 1); // Ensure the amount doesn't go below 1
+        return { ...data, amount: newAmount };
+      }
+      return data;
+    });
+
+    setCartItems(updatedCart);
+  };
+
   return (
     <>
       <Navbar size={cartItems.length} setShow={setShow} />
       {show ? (
         <Home addToCart={addToCart} />
       ) : (
-        <Cart cartItems={cartItems} setCartItems={setCartItems} />
+        <Cart
+          cartItems={cartItems}
+          setCartItems={setCartItems}
+          handleChange={handleChange}
+        />
       )}
 
       {warning && (

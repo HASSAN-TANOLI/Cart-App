@@ -12,6 +12,7 @@ export const List = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: image11,
     price: 80000,
+    amount: 5,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const List = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: image12,
     price: 50000,
+    amount: 4,
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const List = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: image13,
     price: 30000,
+    amount: 3,
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ export const List = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: image14,
     price: 3500,
+    amount: 2,
   },
   {
     id: 5,
@@ -44,5 +48,6 @@ export const List = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: image15,
     price: 4000,
+    amount: 1,
   },
 ];
